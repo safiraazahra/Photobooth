@@ -1,0 +1,43 @@
+name: photobooth
+description: A Flutter photobooth MVP.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.2
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  image: ^4.10.1
+  hive_ce: ^2.20.0
+  hive_ce_flutter: ^2.3.4
+
+  # ----------------------------------------------------------
+  # SUPABASE STORAGE + QR CODE
+  # (untuk upload hasil foto & tampilkan QR biar bisa
+  #  di-scan dari HP -- gratis, tidak perlu kartu kredit)
+  # ----------------------------------------------------------
+  supabase_flutter: ^2.8.0
+  qr_flutter: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/frames/photostrip1.png
+    - assets/frames/photostrip2.png
+    - assets/frames/photostrip3.png
+    - assets/frames/photostrip4.png
